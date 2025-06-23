@@ -18,14 +18,33 @@ export default function RootLayout({
       <body>
         <div className={styles.wrapper}>
           <header className={styles.header}>
-            <h1>My Next.js Application</h1>
+            <div className={styles.logo}>
+              <span className={styles.logoIcon}>🌐</span>
+              Web3 Blog
+            </div>
             <NavBar />
           </header>
 
           <main className={styles.mainContent}>{children}</main>
 
           <footer className={styles.footer}>
-            <p>&copy; 2025 JJJ</p>
+            <div className={styles.footerContent}>
+              <div className={styles.footerLogo}>🌐 Web3 Blog</div>
+              <div className={styles.footerLinks}>
+                <a
+                  href="https://github.com/developerJJJ/JJJ"
+                  className={styles.footerLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+                <a href="/about" className={styles.footerLink}>
+                  About
+                </a>
+              </div>
+              <div>&copy; 2025 JJJ. All rights reserved.</div>
+            </div>
           </footer>
         </div>
       </body>
