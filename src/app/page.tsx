@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./layout.module.css";
 
 export default function Home() {
@@ -9,9 +10,9 @@ export default function Home() {
         more. This blog is dedicated to sharing insights in decentralized
         technology.
       </p>
-      <a href="/blog/web3" className={styles.ctaButton}>
+      <Link href="/blog/web3" className={styles.ctaButton}>
         Explore Articles
-      </a>
+      </Link>
     </main>
   );
 }
