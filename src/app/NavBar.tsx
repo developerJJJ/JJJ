@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/blog/blockchain", label: "Blockchain" },
   { href: "/blog/smart-contract", label: "Smart Contract" },
   { href: "/blog/dapps", label: "dApps" },
+  { href: "/blog/stablecoin", label: "Stablecoin" },
 ];
 
 export default function NavBar() {
