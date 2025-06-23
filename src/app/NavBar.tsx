@@ -6,9 +6,10 @@ import styles from "./layout.module.css";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/login", label: "Login" },
-  { href: "/register", label: "Register" },
-  { href: "/profile", label: "Profile" },
+  { href: "/blog/web3", label: "Web 3.0" },
+  { href: "/blog/blockchain", label: "Blockchain" },
+  { href: "/blog/smart-contract", label: "Smart Contract" },
+  { href: "/blog/dapps", label: "dApps" },
 ];
 
 export default function NavBar() {
@@ -18,10 +19,7 @@ export default function NavBar() {
     <nav>
       <ul className={styles.navList}>
         {navLinks.map(({ href, label }) => (
-          <li
-            key={href}
-            className={pathname === href ? styles.active : ""}
-          >
+          <li key={href} className={pathname === href ? styles.active : ""}>
             <Link href={href}>{label}</Link>
           </li>
         ))}

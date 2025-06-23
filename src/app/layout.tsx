@@ -1,3 +1,4 @@
+import "./globals.css";
 import React from "react";
 import NavBar from "./NavBar";
 import styles from "./layout.module.css";
@@ -15,16 +16,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className={styles.header}>
-          <h1>My Next.js Application</h1>
-          <NavBar />
-        </header>
+        <div className={styles.wrapper}>
+          <header className={styles.header}>
+            <h1>My Next.js Application</h1>
+            <NavBar />
+          </header>
 
-        {children}
+          <main className={styles.mainContent}>{children}</main>
 
-        <footer className={styles.footer}>
-          <p>&copy; 2025 JJJ</p>
-        </footer>
+          <footer className={styles.footer}>
+            <p>&copy; 2025 JJJ</p>
+          </footer>
+        </div>
       </body>
     </html>
   );
